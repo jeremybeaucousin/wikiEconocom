@@ -22,7 +22,7 @@
 NB : Se placer àu niveau de l'emplacement du Dockerfile (situé dans le dépot git)
 
 * Create container
-> docker run -it --rm --name pythonCreoleV2 -p 5000:5000 -v "{{$PATH_TO_DATA}}:/r3a/r3aadmaa" -v "{{$PATH_TO_SOURCE}}:/usr/src/myapp" -w /usr/src/myapp python:creoleV2 
+> docker run -it --rm --name pythonCreoleV2 -p 5000:5000 -v {{PATH_TO_DATA}}:/r3a/r3aadmaa" -v {{PATH_TO_SOURCE}}:/usr/src/myapp -w /usr/src/myapp python:creoleV2 
  
 * Enter container
 > docker exec -it pythonCreoleV2 /bin/bash
